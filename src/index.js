@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Good from './components/GoodMorning'
 
-import multi from './components/Multiply';
+import {GoodAfternoon, GoodNight} from './components/Multiply';
+import Welcome from './components/Welcome';
+
+
 
 ReactDOM.render(
     <div>
-        <multi.GoodAfternoon  name='Santana'/>
-        <multi.GoodNight  name='jusara'/>
-
+        <GoodAfternoon  name='Santana'/>
+        <GoodNight  name='jusara'/>
+        <Welcome type='bom dia' name='Santos'/>
     </div>,
     document.getElementById('root')
 )
